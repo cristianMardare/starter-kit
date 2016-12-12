@@ -1,0 +1,25 @@
+{
+  "name": "starter-kit",
+  "version": "0.0.1",
+  "description": "A project containing tools and settings for JavaScript development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianMardare/starter-kit.git"
+  },
+  "author": "Cristian Mardare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianMardare/starter-kit/issues"
+  },
+  "homepage": "https://github.com/cristianMardare/starter-kit#readme",
+		"dependencies": {
+
+		},
+		"devDependencies": {
+
+		}
+}
