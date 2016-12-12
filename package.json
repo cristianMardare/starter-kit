@@ -4,6 +4,7 @@
   "description": "A project containing tools and settings for JavaScript development",
   "main": "index.js",
   "scripts": {
+			 "start": "nsp check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
