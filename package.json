@@ -4,8 +4,10 @@
   "description": "A project containing tools and settings for JavaScript development",
   "main": "index.js",
   "scripts": {
-			 "start": "nsp check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all --parallel security-check run:server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+				"security-check": "nsp check",
+				"run:server": "node build_scripts/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,10 @@
     "url": "https://github.com/cristianMardare/starter-kit/issues"
   },
   "homepage": "https://github.com/cristianMardare/starter-kit#readme",
-		"dependencies": {
-
-		},
-		"devDependencies": {
-
-		}
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.14.0",
+    "npm-run-all": "^3.1.2",
+    "open": "0.0.5"
+  }
 }
