@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm-run-all --parallel security-check run:server",
     "test": "echo \"Error: no test specified\" && exit 1",
-				"security-check": "nsp check",
-				"run:server": "node build_scripts/server.js"
+    "security-check": "nsp check",
+    "run:server": "babel-node build_scripts/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,11 @@
   "homepage": "https://github.com/cristianMardare/starter-kit#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
     "express": "^4.14.0",
     "npm-run-all": "^3.1.2",
     "open": "0.0.5"
