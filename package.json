@@ -4,8 +4,10 @@
   "description": "A project containing tools and settings for JavaScript development",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel security-check run:server",
+    "start": "npm-run-all --parallel security-check run:server lint:watch",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "esw webpack.config.* src build_scripts --color",
+		"lint:watch": "npm run lint -- --watch",
     "security-check": "nsp check",
     "run:server": "babel-node build_scripts/server.js"
   },
@@ -26,6 +28,9 @@
     "babel-loader": "^6.2.9",
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^2.1.14",
     "express": "^4.14.0",
     "npm-run-all": "^3.1.2",
     "open": "0.0.5",
