@@ -28,6 +28,8 @@
     "babel-register": "^6.18.0",
     "express": "^4.14.0",
     "npm-run-all": "^3.1.2",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0"
   }
 }
